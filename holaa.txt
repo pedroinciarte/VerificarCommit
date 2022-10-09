@@ -1,0 +1,18 @@
+CIFRADO SIMETRICO
+cifrar:
+	gpg --symmetric nombrearchivo
+descifrar:
+	gpg --decrypt nombrearchivo
+
+VERIFICAR COMMIT
+gpg --full-generate-key
+gpg -k
+gpg --armor --export yElCodigo  (aparece la public key)
+	copiar public key y hacer lo de github
+
+git config --global user.signingkey yElCodigo
+(nano .gitconfig)
+git config --global commit.gpgsign true
+
+Hacer repo
+Hacer commit y deberia estar
